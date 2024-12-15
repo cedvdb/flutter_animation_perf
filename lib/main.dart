@@ -6,17 +6,7 @@ void main() async {
       appBar: AppBar(
         title: Text('circular progress indicator'),
       ),
-      body: Center(
-        child: StreamBuilder<Object>(
-          stream: Stream.empty(),
-          builder: (context, snapshot) {
-            if (!snapshot.hasData) {
-              return CircularProgressIndicator();
-            }
-            return Container();
-          },
-        ),
-      ),
+      body: Center(child: CircularProgressIndicator()),
     ),
   ));
 }

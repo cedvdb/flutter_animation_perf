@@ -15,7 +15,10 @@
       "name": "test_flut (profile mode)",
       "request": "launch",
       "type": "dart",
-      "flutterMode": "profile"
+      "flutterMode": "profile",
+      "args": [
+        "--trace-skia"
+      ]
     },
     {
       "name": "test_flut (release mode)",
