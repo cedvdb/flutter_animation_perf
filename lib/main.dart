@@ -4,13 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:test_flut/data.dart';
 import 'package:test_flut/firebase_options.dart';
 
-/// steps to reproduce
-///
-/// launch application
-/// press create data
-/// wait 20 seconds and relead
-///
-
 void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -18,7 +11,7 @@ void main() async {
   FirebaseFirestore.instance.settings = Settings(
     persistenceEnabled: true,
   );
-  // FirebaseFirestore.instance.disableNetwork();
+  FirebaseFirestore.instance.disableNetwork();
 
   runApp(const MyApp());
 }
